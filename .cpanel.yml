@@ -1,4 +1,15 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/awadsa/public_html
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home2/awadsa/public_html/
+    - /bin/cp -R 404 "$DEPLOYPATH"
+    - /bin/cp -R _next "$DEPLOYPATH"
+    - /bin/cp -R _not-found "$DEPLOYPATH"
+    - /bin/cp -R about "$DEPLOYPATH"
+    - /bin/cp -R contact "$DEPLOYPATH"
+    - /bin/cp -R destinations "$DEPLOYPATH"
+    - /bin/cp -R programs "$DEPLOYPATH"
+    - /bin/cp -f 404.html "$DEPLOYPATH"
+    - /bin/cp -f .htaccess "$DEPLOYPATH"
+    - /bin/cp -f index.html "$DEPLOYPATH"
+    - /bin/cp -f robots.txt "$DEPLOYPATH"
+    - /bin/cp -f sitemap.xml "$DEPLOYPATH"
