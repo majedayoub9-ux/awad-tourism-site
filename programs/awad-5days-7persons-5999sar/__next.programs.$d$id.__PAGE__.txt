@@ -2,5 +2,5 @@
 2:I[22016,["/_next/static/chunks/88d181980cf7781d.js","/_next/static/chunks/1e2d80e0bd725bbf.js"],""]
 3:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"mLVWOlpb1iqAXdn6WRQqL","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"space-y-4","children":[["$","h1",null,{"className":"text-2xl font-semibold","children":"Program not found"}],["$","$L2",null,{"href":"/programs","className":"underline","children":"Back to programs"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"A-dLq2tGh8vZbG-jZmzct","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"space-y-4","children":[["$","h1",null,{"className":"text-2xl font-semibold","children":"Program not found"}],["$","$L2",null,{"href":"/programs","className":"underline","children":"Back to programs"}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null
