@@ -1,0 +1,309 @@
+[
+  {
+    "id": "istanbul-city-highlights-3d",
+    "title": "Istanbul City Highlights",
+    "city": "Istanbul",
+    "region": "Marmara",
+    "durationDays": 3,
+    "priceFrom": 149,
+    "currency": "USD",
+    "shortDescription": "Old City, Bosphorus vibes, bazaars, and iconic viewpoints—perfect first-time trip.",
+    "highlights": [
+      "Hagia Sophia area",
+      "Grand Bazaar",
+      "Bosphorus cruise option",
+      "Sunset viewpoints"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Old City walk",
+        "details": "Explore the historic peninsula, photo stops and local street food."
+      },
+      {
+        "day": 2,
+        "title": "Bazaars & neighborhoods",
+        "details": "Markets, hidden streets, cafés and culture."
+      },
+      {
+        "day": 3,
+        "title": "Bosphorus day",
+        "details": "Optional cruise + scenic spots, shopping time."
+      }
+    ],
+    "included": [
+      "Hotel pickup (if selected)",
+      "Local guide",
+      "All program planning"
+    ],
+    "excluded": [
+      "Flights",
+      "Personal expenses",
+      "Optional cruise tickets"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?istanbul,galata,turkey",
+      "https://source.unsplash.com/featured/?bosphorus,istanbul",
+      "https://source.unsplash.com/featured/?grandbazaar,istanbul"
+    ],
+    "destinationSlugs": [
+      "istanbul"
+    ]
+  },
+  {
+    "id": "awad-5days-7persons-5999sar",
+    "title": "Awad Group Stay Package — 5 Days (7 Persons)",
+    "city": "Istanbul",
+    "region": "Turkey",
+    "durationDays": 5,
+    "priceFrom": 5999,
+    "currency": "SAR",
+    "shortDescription": "5-day stay program for a group of 7 at a fixed price in SAR. Great for families and friends.",
+    "highlights": [
+      "5 days stay",
+      "Group of 7 persons",
+      "Fixed price",
+      "Flexible itinerary options"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival & check-in",
+        "details": "Airport arrival, transfer (optional), hotel check-in, light evening plan."
+      },
+      {
+        "day": 2,
+        "title": "City highlights",
+        "details": "Suggested itinerary: landmarks, viewpoints, and local dining."
+      },
+      {
+        "day": 3,
+        "title": "Free day / optional tour",
+        "details": "Shopping, relaxing, or optional activities depending on your preferences."
+      },
+      {
+        "day": 4,
+        "title": "Experience day",
+        "details": "Neighborhoods, markets, and curated experiences based on the group."
+      },
+      {
+        "day": 5,
+        "title": "Departure",
+        "details": "Check-out and departure support."
+      }
+    ],
+    "included": [
+      "Program planning",
+      "WhatsApp support",
+      "Group itinerary suggestions"
+    ],
+    "excluded": [
+      "Flights",
+      "Hotel (if not specified)",
+      "Transport (if not specified)",
+      "Personal expenses"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?turkey,travel,istanbul",
+      "https://source.unsplash.com/featured/?istanbul,hotel",
+      "https://source.unsplash.com/featured/?turkey,city,night"
+    ],
+    "destinationSlugs": [
+      "istanbul"
+    ]
+  },
+  {
+    "id": "trabzon-uzungol-nature-4d",
+    "title": "Trabzon & Uzungöl Nature Escape",
+    "city": "Trabzon",
+    "region": "Black Sea",
+    "durationDays": 4,
+    "priceFrom": 259,
+    "currency": "USD",
+    "shortDescription": "Green mountains, lakes, misty villages, and Black Sea cuisine.",
+    "highlights": [
+      "Uzungöl lake views",
+      "Village stops",
+      "Local food tasting",
+      "Photo-friendly routes"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival & city intro",
+        "details": "Check-in and an easy evening walk and dinner suggestions."
+      },
+      {
+        "day": 2,
+        "title": "Uzungöl day",
+        "details": "Lake viewpoints, short hikes, café stops, photography time."
+      },
+      {
+        "day": 3,
+        "title": "Highlands & villages",
+        "details": "Scenic drives and village experiences (seasonal routes)."
+      },
+      {
+        "day": 4,
+        "title": "Free morning & departure",
+        "details": "Souvenirs / café time then transfer."
+      }
+    ],
+    "included": [
+      "Transport during program",
+      "Local guide (selected days)",
+      "Program planning"
+    ],
+    "excluded": [
+      "Flights",
+      "Hotel (if not selected)",
+      "Personal expenses"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?uzungol,trabzon",
+      "https://source.unsplash.com/featured/?blacksea,mountains,turkey",
+      "https://source.unsplash.com/featured/?trabzon,turkey"
+    ],
+    "destinationSlugs": [
+      "trabzon",
+      "uzungol"
+    ]
+  },
+  {
+    "id": "cappadocia-balloons-2d",
+    "title": "Cappadocia Balloons & Valleys",
+    "city": "Cappadocia",
+    "region": "Central Anatolia",
+    "durationDays": 2,
+    "priceFrom": 229,
+    "currency": "USD",
+    "shortDescription": "Famous sunrise balloons, valleys, and unique rock formations.",
+    "highlights": [
+      "Sunrise balloon option",
+      "Valley walk",
+      "Panorama viewpoints",
+      "Cave vibes"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrive & valley route",
+        "details": "Easy hike + sunset viewpoints."
+      },
+      {
+        "day": 2,
+        "title": "Sunrise + panoramas",
+        "details": "Balloon option then explore highlights and depart."
+      }
+    ],
+    "included": [
+      "Local transfers (program)",
+      "Guide (selected)",
+      "Program planning"
+    ],
+    "excluded": [
+      "Balloon ticket (optional)",
+      "Flights",
+      "Personal expenses"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?cappadocia,balloons",
+      "https://source.unsplash.com/featured/?goreme,cappadocia",
+      "https://source.unsplash.com/featured/?cappadocia,valley"
+    ],
+    "destinationSlugs": [
+      "cappadocia"
+    ]
+  },
+  {
+    "id": "antalya-coast-3d",
+    "title": "Antalya Coast & Old Town",
+    "city": "Antalya",
+    "region": "Mediterranean",
+    "durationDays": 3,
+    "priceFrom": 199,
+    "currency": "USD",
+    "shortDescription": "Beaches, old town charm, and scenic coastal viewpoints.",
+    "highlights": [
+      "Old Town stroll",
+      "Beach time",
+      "Waterfall stop (seasonal)",
+      "Best photo spots"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Old Town & cafés",
+        "details": "Walkthrough, viewpoints, local dining."
+      },
+      {
+        "day": 2,
+        "title": "Beach & relax",
+        "details": "Flexible day: beach, shopping, optional boat."
+      },
+      {
+        "day": 3,
+        "title": "Coast highlights",
+        "details": "Short scenic route + departure."
+      }
+    ],
+    "included": [
+      "Local planning",
+      "Transfers (selected)",
+      "Support on WhatsApp"
+    ],
+    "excluded": [
+      "Flights",
+      "Optional boat tickets",
+      "Personal expenses"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?antalya,beach",
+      "https://source.unsplash.com/featured/?antalya,kaleici",
+      "https://source.unsplash.com/featured/?turkey,mediterranean,coast"
+    ],
+    "destinationSlugs": [
+      "antalya"
+    ]
+  },
+  {
+    "id": "pamukkale-daytrip-1d",
+    "title": "Pamukkale Day Trip",
+    "city": "Pamukkale",
+    "region": "Aegean",
+    "durationDays": 1,
+    "priceFrom": 99,
+    "currency": "USD",
+    "shortDescription": "White terraces, warm springs, and an unforgettable landscape.",
+    "highlights": [
+      "Terraces walk",
+      "Scenic photos",
+      "Relax time",
+      "Easy schedule"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Pamukkale highlights",
+        "details": "Arrive, explore terraces and viewpoints, return."
+      }
+    ],
+    "included": [
+      "Program planning",
+      "Guidance on best times to visit"
+    ],
+    "excluded": [
+      "Entry tickets",
+      "Meals",
+      "Transport (if not selected)"
+    ],
+    "images": [
+      "https://source.unsplash.com/featured/?pamukkale,turkey",
+      "https://source.unsplash.com/featured/?travertine,pamukkale",
+      "https://source.unsplash.com/featured/?denizli,pamukkale"
+    ],
+    "destinationSlugs": [
+      "pamukkale"
+    ]
+  }
+]
