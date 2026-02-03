@@ -34,7 +34,7 @@ jobs:
       - name: Add Apache security rules (.htaccess)
         run: |
           mkdir -p awad-tourism-rebuild/awad-tourism/out
-          cat > awad-tourism-rebuild/awad-tourism/out/.htaccess <<'EOF'
+            cat > awad-tourism-rebuild/awad-tourism/out/.htaccess <<'EOF'
           RewriteEngine On
           Options -Indexes
 
@@ -47,7 +47,7 @@ jobs:
 
           <FilesMatch "\.php$">
             Deny from all
-          </FilesMatch>
+           </FilesMatch>
           EOF
 
       - name: Publish to deploy branch
