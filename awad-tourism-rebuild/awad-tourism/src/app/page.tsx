@@ -1,44 +1,77 @@
-import Link from "next/link";
-import { getPrograms } from "@/lib/programs";
-import ProgramCard from "@/components/ProgramCard";
-import Hero from "@/components/sections/Hero";
-import FeatureGrid from "@/components/sections/FeatureGrid";
-import Testimonials from "@/components/sections/Testimonials";
-import CTA from "@/components/sections/CTA";
+"use client";
 
-export default function HomePage() {
-  const programs = getPrograms().slice(0, 6);
+import { motion } from "framer-motion";
+import LanguageToggle from "@/components/LanguageToggle";
+import { useI18n } from "@/lib/i18n";
+
+export default function Home() {
+  const { lang, t } = useI18n();
+
+  // Optional: put your real WhatsApp number with country code
+  const whatsapp = "https://wa.me/966000000000";
 
   return (
-    <div className="space-y-14">
-      <Hero />
+    <main className={`min-h-[80vh] ${lang === "ar" ? "text-right" : "text-left"}`}>
+      <div className="mx-auto max-w-4xl px-6 py-16">
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-lg font-semibold">Awad Tourism</div>
+          <LanguageToggle />
+        </div>
 
-      <FeatureGrid />
-
-      <section className="mx-auto max-w-6xl px-4">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 md:text-3xl">Popular programs</h2>
-            <p className="mt-2 text-zinc-600">Transparent pricing in SAR — book fast via WhatsApp.</p>
-          </div>
-          <Link
-            href="/programs"
-            className="rounded-full border bg-white px-5 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mt-10 rounded-3xl border bg-white p-10 shadow-sm"
+        >
+          <motion.h1
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="text-4xl font-semibold leading-tight"
           >
-            View all programs
-          </Link>
-        </div>
+            {t("maintenance_title")}
+          </motion.h1>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {programs.map((p) => (
-            <ProgramCard key={p.id} program={p} />
-          ))}
-        </div>
-      </section>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mt-4 text-gray-600"
+          >
+            {t("maintenance_body")}
+          </motion.p>
 
-      <Testimonials />
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.28, duration: 0.6 }}
+            className="mt-2 text-gray-600"
+          >
+            {t("back_soon")}
+          </motion.p>
 
-      <CTA />
-    </div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35, duration: 0.6 }}
+            className="mt-8 flex flex-wrap items-center gap-3"
+          >
+            <a
+              href={whatsapp}
+              className="rounded-full bg-black px-5 py-3 text-sm font-medium text-white"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t("contact_whatsapp")}
+            </a>
+
+            <div className="text-xs text-gray-500">
+              (You can replace the WhatsApp number later)
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </main>
   );
 }
