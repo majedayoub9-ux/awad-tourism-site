@@ -2,7 +2,7 @@ name: Build static site (deploy branch)
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -11,10 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: awad-tourism
 
     steps:
       - name: Checkout repository
@@ -26,14 +22,18 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: |
+          cd awad-tourism
+          npm install --no-audit --no-fund
 
       - name: Build static site
-        run: npm run build
+        run: |
+          cd awad-tourism
+          npm run build
 
       - name: Add Apache security rules (.htaccess)
         run: |
-          cat > out/.htaccess <<'EOF'
+          cat > awad-tourism/out/.htaccess <<'EOF'
           RewriteEngine On
           Options -Indexes
 
