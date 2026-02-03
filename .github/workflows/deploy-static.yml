@@ -14,7 +14,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: awad-tourism/awad-tourism
+        working-directory: awad-tourism
 
     steps:
       - name: Checkout repository
@@ -26,7 +26,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --no-audit --no-fund
 
       - name: Build static site
         run: npm run build
@@ -53,5 +53,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: deploy
-          folder: awad-tourism/awad-tourism/out
+          folder: awad-tourism/out
           clean: true
