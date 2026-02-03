@@ -1,0 +1,54 @@
+name: Build static site (deploy branch)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Add Apache security rules (.htaccess)
+        run: |
+          cat > out/.htaccess <<'EOF'
+          RewriteEngine On
+          Options -Indexes
+
+          RewriteCond %{HTTPS} !=on
+          RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+          RewriteRule ^ index.html [L]
+
+          <FilesMatch "\.php$">
+            Deny from all
+          </FilesMatch>
+          EOF
+
+      - name: Publish to deploy branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: deploy
+          folder: out
+          clean: true
