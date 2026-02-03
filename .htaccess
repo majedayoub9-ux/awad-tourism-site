@@ -10,4 +10,4 @@ RewriteRule ^ index.html [L]
 
 <FilesMatch "\.php$">
   Deny from all
-</FilesMatch>
+ </FilesMatch>
