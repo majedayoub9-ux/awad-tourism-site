@@ -1,21 +1,12 @@
 import type { NextConfig } from "next";
 
-const securityHeaders = [
-  { key: "X-Content-Type-Options", value: "nosniff" },
-  { key: "X-Frame-Options", value: "DENY" },
-  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=()" },
-  // HSTS is set in middleware only when the request is HTTPS (see src/middleware.ts)
-];
-
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: securityHeaders,
-      },
-    ];
+  // ✅ Required for static export to generate /out
+  output: "export",
+
+  // Optional: helps avoid issues with images on static hosting
+  images: {
+    unoptimized: true,
   },
 };
 
