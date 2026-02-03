@@ -23,17 +23,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd awad-tourism
+          cd awad-tourism-rebuild/awad-tourism
           npm install --no-audit --no-fund
 
       - name: Build static site
         run: |
-          cd awad-tourism
+          cd awad-tourism-rebuild/awad-tourism
           npm run build
 
       - name: Add Apache security rules (.htaccess)
         run: |
-          cat > awad-tourism/out/.htaccess <<'EOF'
+          cat > awad-tourism-rebuild/awad-tourism/out/.htaccess <<'EOF'
           RewriteEngine On
           Options -Indexes
 
@@ -53,5 +53,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: deploy
-          folder: awad-tourism/out
+          folder: awad-tourism-rebuild/awad-tourism/out
           clean: true
