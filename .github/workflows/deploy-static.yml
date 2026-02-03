@@ -30,9 +30,10 @@ jobs:
         run: |
           cd awad-tourism-rebuild/awad-tourism
           npm run build
-
+          
       - name: Add Apache security rules (.htaccess)
         run: |
+          mkdir -p awad-tourism-rebuild/awad-tourism/out
           cat > awad-tourism-rebuild/awad-tourism/out/.htaccess <<'EOF'
           RewriteEngine On
           Options -Indexes
